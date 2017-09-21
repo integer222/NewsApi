@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/media"
+            android:layout_width="@dimen/feed_image_width"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/color_item_placeholder"
+            android:scaleType="centerCrop"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="105dp"
+            tools:src="@drawable/ic_image_white_24dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/MainText.Subheading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toStartOf="@+id/media"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="43dp"
+            tools:text="The Xbox One X and PS4 Pro prove the old console cycle is dead"/>
+
+        <TextView
+            android:id="@+id/body"
+            style="@style/MainText.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@+id/media"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="99dp"
+            tools:text="For almost all of console gaming history, a game's graphics were written in stone. Barring remakes and re-releases, Mario 64, Final Fantasy VII, Chrono Trigger, etc, look the same to ..."/>
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/MainText.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/media"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/body"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="138dp"
+            tools:text="21.10.17"/>
+    </android.support.constraint.ConstraintLayout>
+</layout>
